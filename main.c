@@ -4,20 +4,15 @@
 int main(int argc, char *argv[])
 {
   
-  int input;
+  int a;
   
-  printf("input an integer : ");
-  scanf("%d", &input);
+  printf("정수를 하나 입력하세요 : ");
+  scanf("%d", &a);
   
-  if (input > 0)
-       printf("positive\n");
-       
-  else if (input < 0)
-       printf("negative\n");
-  
-  else
-       printf("zero");  
-  
+  if ( a < 0 )
+   printf("절대값은 %d입니다.", -a);
+  else  
+   printf("절대값은 %d입니다.", a);  
   
   system("PAUSE");	
   return 0;
